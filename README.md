@@ -5,6 +5,8 @@
 滑动开关是一个纯粹的自定义控件，上面的按钮会随着我们的左右滑动而滑动，并且在状态改变时通知用户，效果如下图1-9 所示，这也是应用中设置某些状态信息时最常见的控件，因此，我们有必要学习关于如何
 自定义一个这样的滑动开关。
 
+![](https://github.com/JackChen1999/ToggleButton/blob/master/art/b1.png) ![](https://github.com/JackChen1999/ToggleButton/blob/master/art/b2.png)
+
 # 滑动开关UI
 
 布局文件为activity_main.xml，代码如下：res/layout/activity_main.xml
@@ -52,6 +54,8 @@ xmlns:itheima="http://schemas.android.com/apk/res/com.itheima.togglebuttondemo",
 ```
 
 attrs.xml 文件目录结构如下图所示：
+
+![](https://github.com/JackChen1999/ToggleButton/blob/master/art/b3.png)
 
 # 滑动开关业务逻辑实现
 
@@ -195,6 +199,8 @@ public class ToggleButton extends View {
 }
 ```
 运行程序，效果图如图1-11 所示。
+
+![](https://github.com/JackChen1999/ToggleButton/blob/master/art/b4.png) ![](https://github.com/JackChen1999/ToggleButton/blob/master/art/b3.png)
 
 # 知识点总结
 
