@@ -30,7 +30,7 @@
 
 在activity_main.xml 布局中引入如下命名空间：
 xmlns:itheima="http://schemas.android.com/apk/res/com.itheima.togglebuttondemo",com.itheima.togglebuttondemo 是包名，itheima 是自定义的命名控件名，可以任取名字，也可以使用类名。
-上面的布局主要是引入com.itheima.togglebuttondemo.view.ToggleButton 类和自定义属性的使用。添加自定义属性，在values 目录下创建attrs.xml 文件，具体代码如文件【1-10】所示：res/values/attrs.xml
+上面的布局主要是引入com.itheima.togglebuttondemo.view.ToggleButton 类和自定义属性的使用。添加自定义属性，在values 目录下创建attrs.xml 文件，具体代码如文件所示：res/values/attrs.xml
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -88,7 +88,7 @@ public class MainActivity extends Activity {
 	}
 }
 ```
-自定义的滑动开关ToggleButton 类的实现，具体代码如文件【1-12】所示：com/itheima/MySwitch/MainActivity
+自定义的滑动开关ToggleButton 类的实现，具体代码如文件所示：com/itheima/MySwitch/MainActivity
 
 ```java
 public class ToggleButton extends View {
@@ -200,19 +200,19 @@ public class ToggleButton extends View {
 ```
 运行程序，效果图如图1-11 所示。
 
-![](https://github.com/JackChen1999/ToggleButton/blob/master/art/b4.png) ![](https://github.com/JackChen1999/ToggleButton/blob/master/art/b3.png)
+![](https://github.com/JackChen1999/ToggleButton/blob/master/art/b4.png) ![](https://github.com/JackChen1999/ToggleButton/blob/master/art/b5.png)
 
 # 知识点总结
 
-1．通过setMeasuredDimension 方法，来设置自定义控件的宽高，见ToggleButton 类第42 行。
-2．View 可以通过invalidate()方法强制让自己重新绘制，见ToggleButton 类第96 行。
-3．View 通过实现onTouchEvent 方法来处理手指触摸事件，见ToggleButton 类第72 行。
+1．通过setMeasuredDimension 方法，来设置自定义控件的宽高，见ToggleButton 类第42 行
+2．View 可以通过invalidate()方法强制让自己重新绘制，见ToggleButton 类第96 行
+3．View 通过实现onTouchEvent 方法来处理手指触摸事件，见ToggleButton 类第72 行
 
 # 自定义控件之自定义属性
 
 当我们使用自定义属性来自定义控件时，一般分为以下几个步骤进行设置：
 
-1. 在res 文件的values 里面创建attrs.xml，见文件【1-10】attrs.xml。
-2. 在attrs.xml，里面定义我们需要的属性，见文件【1-10】attrs.xml 代码。
-3. 在布局文件中使用自定义的属性，注意要添加命名空间，见文件【1-9】activity_main.xml 第2 行。
-4. 在构造方法中来获取设置的属性数据，见文件【1-9】见ToggleButton 类第8~19 行。
+1. 在res 文件的values 里面创建attrs.xml，见文件【1-10】attrs.xml
+2. 在attrs.xml，里面定义我们需要的属性，见文件【1-10】attrs.xml 代码
+3. 在布局文件中使用自定义的属性，注意要添加命名空间，见文件【1-9】activity_main.xml 第2 行
+4. 在构造方法中来获取设置的属性数据，见文件【1-9】见ToggleButton 类第8~19 行
