@@ -9,7 +9,24 @@ import android.view.MotionEvent;
 import android.view.View;
 
 /**
- * 滑动开关 52期
+ * ============================================================
+ * Copyright：${TODO}有限公司版权所有 (c) 2017
+ * Author：   AllenIverson
+ * Email：    815712739@qq.com
+ * GitHub：   https://github.com/JackChen1999
+ * 博客：     http://blog.csdn.net/axi295309066
+ * 微博：     AndroidDeveloper
+ * <p>
+ * Project_Name：ToggleButton
+ * Package_Name：com.github.togglebutton
+ * Version：1.0
+ * time：2016/2/28 16:42
+ * des ：滑动开关 52期
+ * gitVersion：$Rev$
+ * updateAuthor：$Author$
+ * updateDate：$Date$
+ * updateDes：${TODO}
+ * ============================================================
  */
 
 public class ToggleButton extends View{

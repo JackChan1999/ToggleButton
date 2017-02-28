@@ -11,7 +11,7 @@ import android.view.MotionEvent;
 import android.view.View;
 
 /**
- * 滑动开关 52期
+ * 滑动开关 66期
  *
  * 自定义view流程:
  * 1. 写类继承View
@@ -46,8 +46,7 @@ public class SwitchButton extends View {
 		// 加载自定义滑块图片
 		int slideId = attrs.getAttributeResourceValue(NAMESPACE, "slide", -1);
 		if (slideId > 0) {
-			mBitmapSlide = BitmapFactory
-					.decodeResource(getResources(), slideId);
+			mBitmapSlide = BitmapFactory.decodeResource(getResources(), slideId);
 		}
 
 		if (isOpen) {
@@ -55,7 +54,6 @@ public class SwitchButton extends View {
 		} else {
 			mSlideLeft = 0;
 		}
-
 		invalidate();
 	}
 
@@ -70,12 +68,10 @@ public class SwitchButton extends View {
 		mPaint.setColor(Color.RED);// 画笔颜色
 
 		// 初始化背景bitmap
-		mBitmapBg = BitmapFactory.decodeResource(getResources(),
-				R.drawable.switch_background);
+		mBitmapBg = BitmapFactory.decodeResource(getResources(), R.drawable.switch_background);
 
 		// 初始化滑块bitmap
-		mBitmapSlide = BitmapFactory.decodeResource(getResources(),
-				R.drawable.slide_button_background);
+		mBitmapSlide = BitmapFactory.decodeResource(getResources(), R.drawable.slide_button_background);
 
 		MAX_LEFT = mBitmapBg.getWidth() - mBitmapSlide.getWidth();
 

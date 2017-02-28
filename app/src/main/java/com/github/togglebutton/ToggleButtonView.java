@@ -11,7 +11,24 @@ import android.view.MotionEvent;
 import android.view.View;
 
 /**
- * 滑动开关 56期
+ * ============================================================
+ * Copyright：${TODO}有限公司版权所有 (c) 2017
+ * Author：   AllenIverson
+ * Email：    815712739@qq.com
+ * GitHub：   https://github.com/JackChen1999
+ * 博客：     http://blog.csdn.net/axi295309066
+ * 微博：     AndroidDeveloper
+ * <p>
+ * Project_Name：ToggleButton
+ * Package_Name：com.github.togglebutton
+ * Version：1.0
+ * time：2016/2/28 16:42
+ * des ：滑动开关 56期
+ * gitVersion：$Rev$
+ * updateAuthor：$Author$
+ * updateDate：$Date$
+ * updateDes：${TODO}
+ * ============================================================
  */
 
 public class ToggleButtonView extends View implements View.OnClickListener {
@@ -52,10 +69,8 @@ public class ToggleButtonView extends View implements View.OnClickListener {
 		paint.setAntiAlias(true);
 		paint.setColor(Color.RED);
 
-		backgroudBitmap = BitmapFactory.decodeResource(getResources(),
-				R.drawable.switch_background);
-		slideBitmap = BitmapFactory.decodeResource(getResources(),
-				R.drawable.slide_button_background);
+		backgroudBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.switch_background);
+		slideBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.slide_button_background);
 
 		slideLeftMax = backgroudBitmap.getWidth() - slideBitmap.getWidth();
 		// 对当前控件设置点击事件
@@ -70,8 +85,7 @@ public class ToggleButtonView extends View implements View.OnClickListener {
 	protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
 		// super.onMeasure(widthMeasureSpec, heightMeasureSpec);
 		// 根据背景图片指定宽和高
-		setMeasuredDimension(backgroudBitmap.getWidth(),
-				backgroudBitmap.getHeight());
+		setMeasuredDimension(backgroudBitmap.getWidth(), backgroudBitmap.getHeight());
 	}
 
 	/**
@@ -155,7 +169,6 @@ public class ToggleButtonView extends View implements View.OnClickListener {
 			
 			//5.重新计算起始坐标
 			startX = event.getX();
-			
 
 			break;
 		case MotionEvent.ACTION_UP:// 离开
